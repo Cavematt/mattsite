@@ -1,0 +1,94 @@
+.navbarAll{
+    background-color: black;
+    color: white;
+    font-family: 'VT323', monospace;
+    height: 100%; 
+    width: 20%; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    overflow-x: hidden; 
+    padding-top: 20px;
+    padding-left: 5px;  
+    transition: width, 1s;  
+}
+
+.navbarAll:hover{
+    width: 40%;
+}
+
+.navbarTitle {
+    height: 20%;
+}
+
+.navbarInfo p {
+    height: 5%;
+    font-size: 20px;
+    text-align: center;
+    position: center;
+}
+
+.navbarList {
+    height: 50%;
+}
+
+.navbarButton {
+    list-style: none;
+    padding-bottom: 10px;
+    padding-top:10px;
+    margin-right: 10px;
+}
+
+.navbarLinks {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    padding:10px;
+    transition: 1s;
+}
+
+.navbarLinks:hover {
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.modeChangeDark {
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    background-color: white;
+    border: solid;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    height: 35px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.modeChangeLight {
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    background-color: black;
+    border: solid;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    height: 35px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.modeChangeLight:hover {
+    background-color: grey;
+    width: 150px;
+    height: 38.5px;
+}
+
+.modeChangeDark:hover {
+    background-color: grey;
+    width: 150px;
+    height: 38.5px;
+}
