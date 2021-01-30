@@ -7,7 +7,9 @@ import { Link } from 'react-router-dom'
 
 function Navbar() {
     const [color, setColor] = useState("#39FF14")
+    const [fontclr, setFontclr] = useState("")
     const [nice, setNice] = useState(false)
+
 
     function darkMode() {
         if (nice === false) {
@@ -23,9 +25,9 @@ function Navbar() {
             document.body.style.color = "white"
         } else {
             document.body.style.backgroundColor = color
+            document.body.style.color = fontclr
         }
-
-    }, [color, nice])
+    }, [color, nice, fontclr])
 
   
 
@@ -37,13 +39,13 @@ function Navbar() {
             <div className="navbarList">
                 <ul>
                     <li className="navbarButton">
-                        <Link onClick={() => setColor("#39FF14")} className="navbarLinks" to="/">Home</Link>
+                        <Link onClick={() => {setColor("#39FF14"); setFontclr("black")}} className="navbarLinks" to="/">Home</Link>
                     </li>
                     <li className="navbarButton">
                         <Link onClick={() => setColor("pink")} className="navbarLinks" to="/AboutMe">About Me</Link>
                     </li>
                     <li className="navbarButton">
-                        <Link className="navbarLinks" to="/Business">Business</Link>
+                        <Link className="navbarLinks" to="/Business">Web Design</Link>
                     </li>
                     <li className="navbarButton">
                         <Link className="navbarLinks" to="/Portfolio">Portfolio</Link>
@@ -52,7 +54,7 @@ function Navbar() {
                         <Link className="navbarLinks" to="/Security">Security</Link>
                     </li>
                     <li className="navbarButton">
-                        <Link className="navbarLinks" to="/Contact">Contact</Link>
+                        <Link className="navbarLinks" to="/Contact">Contact.json</Link>
                     </li>
                     <li className="navbarButton">
                         <h1 onClick={darkMode}>{nice ? <button className="modeChangeDark">NORMAL MODE</button> : <button className="modeChangeLight">DARK MODE</button>}</h1>
