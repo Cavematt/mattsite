@@ -1,8 +1,76 @@
 body {
     background-color: #39FF14;
+    
 }
 
 .fpAll {
     width: 80%;
     margin-left: 20%;
+}
+
+
+/*below is for the photo of me on the frontpage */
+
+.fpPhotoCont {
+    float: right;
+    width: 37%;
+    margin-right: 5%;
+}
+
+.fpPhoto {
+    width: 100%;
+    border-radius: 10%;
+    margin-top: 30px;
+}
+
+/*below is for the text on frontpage */
+
+.fpText {
+    float: left;
+    width: 47%;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 50px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 18px;
+}
+
+.fpTextSig {
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+
+/*below is for the MP logo on frontpage 
+.fpLogo {
+}
+
+.fpMP {
+    font-family: 'Londrina Solid', cursive;
+    transition: 0.5s;
+    font-size: 200px;
+    left: 25%;
+    color: #1F51FF;
+}
+
+.fpMP:hover {
+    text-shadow: 1rem 1rem 1rem red;
+}
+*/
+
+.fpDynamic {
+    float: left;
+    width: 100%;
+    margin-top: 5rem;
+    color: blue;
+}
+
+.fpDynamicText {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.fpDynamicText:hover {
+    text-shadow:  1px 1px red;
 }
