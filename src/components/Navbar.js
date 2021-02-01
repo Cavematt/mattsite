@@ -8,8 +8,8 @@ import { Link } from 'react-router-dom'
 function Navbar() {
 
     //the below deals with color of pages for dark mode
-    const [color, setColor] = useState("#39FF14")
-    const [fontclr, setFontclr] = useState("")
+    const [color, setColor] = useState("#000080")
+    const [fontclr, setFontclr] = useState("yellow")
     const [nice, setNice] = useState(false)
 
 
@@ -44,7 +44,7 @@ function Navbar() {
             <div className="navbarList">
                 <ul>
                     <li className="navbarButton">
-                        <Link onClick={() => {setColor("#39FF14"); setFontclr("black")}} className="navbarLinks"  to="/">Home</Link>
+                        <Link onClick={() => {setColor("#000080"); setFontclr("yellow")}} className="navbarLinks"  to="/">Home</Link>
                     </li>
                     <li className="navbarButton">
                         <Link onClick={() => setColor("pink")} className="navbarLinks" to="/AboutMe">About Me</Link>

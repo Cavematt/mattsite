@@ -1,5 +1,5 @@
 body {
-    background-color: #39FF14;
+    background-color: #000080;
     
 }
 
@@ -39,6 +39,7 @@ body {
 .fpTextSig {
     font-family: 'Dancing Script', cursive;
     font-size: 25px;
+    margin-bottom: 35px;
 }
 
 /*below is for the MP logo on frontpage 
@@ -72,10 +73,11 @@ body {
 }
 
 .fpDynamicText:hover {
-    text-shadow:  1px 1px red;
+    text-shadow:  2px 2px red;
 }
 
 .linkedIn {
     width: 70px;
     margin-left: 5px;
 }
+
