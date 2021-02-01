@@ -74,3 +74,8 @@ body {
 .fpDynamicText:hover {
     text-shadow:  1px 1px red;
 }
+
+.linkedIn {
+    width: 70px;
+    margin-left: 5px;
+}
