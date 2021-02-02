@@ -6,6 +6,36 @@ import { Link } from 'react-router-dom'
 
 
 function Navbar() {
+    //the below deals with rendering the appropriate menu
+    const [menu, setMenu] = useState(true)
+
+    const changeMenu= () => {
+        if (menu === true) {
+        setMenu(false)
+    } else {
+        setMenu(true)
+    }
+    }
+
+    //the below deals with checking the screen width for the menu as appropriate 
+
+    const [button, setButton] = useState(false)
+    
+    const showButton = () => {
+        if (window.innerWidth <= 999) {
+            setButton(false)
+        } else {
+            setButton(true)
+        }
+    }
+
+    useEffect(() => {
+        showButton()
+    }, [])
+    
+    window.addEventListener('resize', showButton)
+
+    
 
     //the below deals with color of pages for dark mode
     const [color, setColor] = useState("#000080")
@@ -37,7 +67,8 @@ function Navbar() {
   
 
     return (
-        <div  className="navbarAll">
+        <div>
+            {button ? <div  className="navbarAll">
             <div className="navbarTitle">
                 <h1>C:\Matt-Potts\Developer\Central-Scotland>.</h1>
             </div>
@@ -72,7 +103,47 @@ function Navbar() {
             <div className="navbarInfo">
                 <p>Specialising in React, Javascript and AWS</p>
             </div>
-        </div>
+            </div> 
+            : 
+            null}
+            {menu ? <div><p  onClick={changeMenu} className="navButton">MENU</p></div> : 
+            <div  className="navbarAll">
+            <div className="navbarTitle">
+                <h1>C:\Matt-Potts\Developer\Central-Scotland>.</h1>
+            </div>
+            <div className="navbarList">
+                <ul>
+                    <li className="navbarButton">
+                        <Link onClick={() => {setColor("#000080"); setFontclr("yellow"); changeMenu()}} className="navbarLinks"  to="/">Home</Link>
+                    </li>
+                    <li className="navbarButton">
+                        <Link onClick={() => {setColor("pink"); changeMenu()}} className="navbarLinks" to="/AboutMe">About Me</Link>
+                    </li>
+                    <li className="navbarButton">
+                        <Link className="navbarLinks" to="/Business">Web Design</Link>
+                    </li>
+                    <li className="navbarButton">
+                        <Link className="navbarLinks" to="/Portfolio">Portfolio</Link>
+                    </li>
+                    <li className="navbarButton">
+                        <Link className="navbarLinks" to="/Security">Security</Link>
+                    </li>
+                    <li className="navbarButton">
+                        <Link className="navbarLinks" to="/Contact">Contact.json</Link>
+                    </li>
+                    <li className="navbarButton">
+                        <h1 onClick={darkMode}>{nice ? <button className="modeChangeDark">NORMAL MODE</button> : <button className="modeChangeLight">DARK MODE</button>}</h1>
+                    </li>
+                </ul>
+            </div>
+            <div className="navbarInfo">
+                <p>Contact: 07505015289</p>
+            </div>
+            <div className="navbarInfo">
+                <p>Specialising in React, Javascript and AWS</p>
+            </div>
+            </div>}
+            </div>
     )
 }
 

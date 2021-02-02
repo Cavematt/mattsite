@@ -5,6 +5,8 @@ import GitHub from "../images/GitHub.png"
 import LinkedIn from "../images/linked.png"
 
 function FrontPage() {
+
+    // below is for the variable display
     const [line, setLine] = useState("")
 
     useEffect(() => {
@@ -23,19 +25,36 @@ function FrontPage() {
         }, 4000)
     }, [])
 
+    //below is for the mobile or desktop to render correct words
+    const [text, setText] = useState(true)
+
+    const showText = () => {
+        if (window.innerWidth <= 999) {
+            setText(true)
+        } else {
+            setText(false)
+        }
+    }
+
+    useEffect(() => {
+        showText()
+    }, [])
+    
+    window.addEventListener('resize', showText)
+
     return (
         <div className="fpAll">
             <div>
                 <div className="fpText">
-                    <p>Hello, thanks for taking the time to check out my site. Here you will find out a bit about me and how I can help your business by developing value custom solutions to help you run your business more efficiently. </p>
+                    {text ? <div><p>Hello, My name is Matthew and I am a developer from Central Scotland. Here on my site you will find out a bit about me and how I can help your business by developing value custom solutions to help you run your business more efficiently. </p></div> : <div><p>Hello, thanks for taking the time to check out my site. Here you will find out a bit about me and how I can help your business by developing value custom solutions to help you run your business more efficiently. </p></div>}
                     <p>I specialise in React.js with a love for design and layout. I love to learn and am happy to learn new languages and skills if needed for a project. Please check out the rest of my site for further information</p>
                     <p className="fpTextSig">Matthew Potts</p>
                     <div>
                         <a href="https://github.com/Cavematt">
-                        <img src={GitHub} alt="Link to matt Potts Github" />
+                        <img className="fpGitHub"src={GitHub} alt="Link to matt Potts Github" />
                         </a>
                         <a href="https://uk.linkedin.com/public-profile/in/matthew-potts-15b908196?">
-                        <img className="linkedIn"src={LinkedIn} alt="Link to matt Potts Linkedin" />
+                        <img className="fplinkedIn"src={LinkedIn} alt="Link to matt Potts Linkedin" />
                         </a>
                     </div>
                 </div>
