@@ -16,13 +16,13 @@ body {
 .fpPhotoCont {
     float: right;
     width: 37%;
-    margin-right: 5%;
+    padding-right: 5%;
 }
 
 .fpPhoto {
     width: 100%;
     border-radius: 10%;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 
 /*below is for the text on frontpage */

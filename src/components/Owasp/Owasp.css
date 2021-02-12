@@ -1,0 +1,87 @@
+.allText {
+    margin-left: 35%;
+    width: 50%;
+    border: none;
+    padding: 10px;
+    background: radial-gradient(grey, darkgrey);
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 5px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 18px;
+}
+
+.btn-flat {
+      margin: auto;
+      width: 25%;
+      background-color: lightgrey;
+      color: white;
+    }
+
+    .btn-xxl {
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+    }
+
+
+.bimbo {
+    color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
+
+.button {
+    color: black;
+    background-color: radial-gradient(grey,darkgrey);
+    margin: auto;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.829);
+    transition: 0.5s ease-out;
+}
+
+.allText:hover {
+    background: black;
+    transition: 0.5s ease-out;
+}
+
+.securityText {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 18px;
+    margin-left: 30%;
+    width: 60%;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.securityText p {
+    padding: 1rem;
+}
+
+.goQuiz {
+    cursor: pointer;
+    padding-top: 8px;
+    padding-bottom:11px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.goQuiz:hover {
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px; 
+    transition-duration: 0.5s;
+}

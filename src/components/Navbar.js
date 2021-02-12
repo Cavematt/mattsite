@@ -87,7 +87,7 @@ function Navbar() {
                         <Link className="navbarLinks" to="/Portfolio">Portfolio</Link>
                     </li>
                     <li className="navbarButton">
-                        <Link className="navbarLinks" to="/Security">Security</Link>
+                        <Link onClick={() => setColor("#149414")} className="navbarLinks" to="/Security">Security</Link>
                     </li>
                     <li className="navbarButton">
                         <Link className="navbarLinks" to="/Contact">Contact.json</Link>

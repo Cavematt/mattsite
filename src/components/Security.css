@@ -1,0 +1,145 @@
+@media (min-width: 999px) {
+
+.everything {
+    background-repeat: repeat;
+    padding-bottom: 10%;
+    z-index:2;
+    margin-left: 20%;
+    font-family: 'Nanum Gothic', sans-serif
+}
+
+.everythingElse {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    padding-top: 2rem;
+    color: white;
+}
+
+
+
+.mainText {
+    padding-top: 1.5rem;
+}
+
+.mainText p {
+    padding-top: 1rem;
+}
+
+.buttonOne {
+    margin-top: 2rem;
+}
+
+.buttonOneLink {
+    cursor: pointer;
+    padding: 10px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.buttonOneLink:hover {
+    background: black;
+    color: darkgreen;
+    border-style: solid;
+    border-color: darkgreen;
+    border-radius: 5px; 
+    transition-duration: 0.5s;
+}
+
+.buttonTwo {
+    margin-top: 2rem;
+}
+
+.buttonTwoLink {
+    cursor: pointer;
+    padding: 10px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.buttonTwoLink:hover {
+    background: black;
+    color: darkgreen;
+    border-style: solid;
+    border-color: darkgreen;
+    border-radius: 5px; 
+    transition-duration: 0.5s;
+}
+}
+
+@media (max-width: 999px) {
+    .everything {
+        background-repeat: repeat;
+        padding-bottom: 10%;
+        z-index:2;
+        font-family: 'Nanum Gothic', sans-serif;
+        width: 80%;
+        padding-left: 10%;
+    }
+    
+    .everythingElse {
+
+        text-align: center;
+        padding-top: 2rem;
+        color: white;
+    }
+    
+    
+    
+    .mainText {
+        padding-top: 1.5rem;
+    }
+    
+    .mainText p {
+        padding-top: 1rem;
+    }
+    
+    .buttonOne {
+        margin-top: 2rem;
+    }
+    
+    .buttonOneLink {
+        cursor: pointer;
+        padding: 10px;
+        background: black;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    
+    .buttonOneLink:hover {
+        background: black;
+        color: darkgreen;
+        border-style: solid;
+        border-color: darkgreen;
+        border-radius: 5px; 
+        transition-duration: 0.5s;
+    }
+    
+    .buttonTwo {
+        margin-top: 2rem;
+    }
+    
+    .buttonTwoLink {
+        cursor: pointer;
+        padding: 10px;
+        background: black;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    
+    .buttonTwoLink:hover {
+        background: black;
+        color: darkgreen;
+        border-style: solid;
+        border-color: darkgreen;
+        border-radius: 5px; 
+        transition-duration: 0.5s;
+    }
+
+}
