@@ -8,6 +8,7 @@ import Business from './components/Business'
 import Portfolio from './components/Portfolio'
 import Security from './components/Security'
 import Contact from './components/Contact'
+import Owasp from './components/Owasp/Owasp'
 
 function App() {
   
@@ -34,6 +35,9 @@ function App() {
           </Route>
           <Route path="/Contact" exact>
             <Contact />
+          </Route>
+          <Route path="/Owasp" exact>
+            <Owasp />
           </Route>
         </Switch>
       </Router>
