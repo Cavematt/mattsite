@@ -1,3 +1,7 @@
-body {
+.contactAll {
+    margin-left: 22%;
+}
+
+.jsonContainer {
     background-color: grey;
 }
