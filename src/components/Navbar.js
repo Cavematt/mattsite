@@ -78,7 +78,7 @@ function Navbar() {
                         <Link onClick={() => {setColor("#000080"); setFontclr("yellow")}} className="navbarLinks"  to="/">Home</Link>
                     </li>
                     <li className="navbarButton">
-                        <Link onClick={() => setColor("pink")} className="navbarLinks" to="/AboutMe">About Me</Link>
+                        <Link onClick={() => {setColor("#D3D3D3"); setFontclr("#666666")}} className="navbarLinks" to="/AboutMe">About Me</Link>
                     </li>
                     <li className="navbarButton">
                         <Link className="navbarLinks" to="/Business">Web Design</Link>
@@ -117,7 +117,7 @@ function Navbar() {
                         <Link onClick={() => {setColor("#000080"); setFontclr("yellow"); changeMenu()}} className="navbarLinks"  to="/">Home</Link>
                     </li>
                     <li className="navbarButton">
-                        <Link onClick={() => {setColor("pink"); changeMenu()}} className="navbarLinks" to="/AboutMe">About Me</Link>
+                        <Link onClick={() => {setColor("#D3D3D3"); setFontclr("#666666"); changeMenu()}} className="navbarLinks" to="/AboutMe">About Me</Link>
                     </li>
                     <li className="navbarButton">
                         <Link className="navbarLinks" to="/Business">Web Design</Link>
