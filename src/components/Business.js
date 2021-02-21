@@ -1,9 +1,17 @@
 import React from 'react'
+import "./Business.css"
+import yvett from "../images/ivett.jpg"
 
 function Business() {
     return (
-        <div>
+        <div className="busAll">
+            <div className="busTitle">
+                <h2>Want me to build your site?</h2>
+            </div>
             <div>
+                    <img className="ivettPhoto" src={yvett} alt="ivett site" />
+            </div>
+            <div className="busAllTxt">
                 <div>
                     <p>I want to make your website fit you and your business. As I design each website “from scratch” I can make something truly unique and minimise any ongoing costs which can be as little as £5 a month including a domain which can be significantly cheaper than many drag and drop web builders where your site is built from a template. I can integrate most features as required and can be anything from an online shop or a single page application to an online portal where you login to view documents or training for your employees. </p>
                 </div>

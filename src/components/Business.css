@@ -1,0 +1,73 @@
+@media (min-width: 999px) {
+.busAll { 
+    margin-left: 22%;
+   
+}
+
+.ivettPhoto {
+    width: 30%;
+    transition: 0.1s;
+    float: left;
+    margin-right: 2%;
+   
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+
+.ivettPhoto:hover {
+    width: 98%;
+   
+}
+
+.busAllTxt {
+    margin-right: 2%;
+    transition: 0.3s;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    padding-top: 3.5%;
+}
+
+.busTitle {
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    font-size: 22px;
+}
+
+.busTitle {
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+}
+}
+
+@media (max-width: 998px) {
+    .busAll {    
+    }
+    
+    .ivettPhoto {
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    .ivettPhoto:hover {
+
+    }
+    
+    .busAllTxt {
+        margin-right: 2%;
+        transition: 0.3s;
+        font-family: 'Nanum Gothic', sans-serif;
+        text-align: center;
+        padding-top: 3.5%;
+    }
+    
+    .busTitle {
+        font-family: 'Nanum Gothic', sans-serif;
+        text-align: center;
+        font-size: 22px;
+    }
+    
+    .busTitle {
+        font-family: 'Nanum Gothic', sans-serif;
+        text-align: center;
+    }
+}
