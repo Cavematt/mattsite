@@ -1,7 +1,24 @@
+
+@media (min-width:1000px) {
 .contactAll {
     margin-left: 22%;
+    font-family: 'Nanum Gothic';
+    margin-right: 2%;
 }
 
 .jsonContainer {
     background-color: grey;
+}
+}
+
+@media (max-width: 999px) {
+    .contactAll {
+        margin-left: 2%;
+        font-family: 'Nanum Gothic';
+        margin-right: 2%;
+    }
+    
+    .jsonContainer {
+        background-color: grey;
+    }
 }

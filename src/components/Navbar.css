@@ -86,14 +86,10 @@
 }
 .modeChangeLight:hover {
     background-color: grey;
-    width: 150px;
-    height: 38.5px;
 }
 
 .modeChangeDark:hover {
     background-color: grey;
-    width: 150px;
-    height: 38.5px;
 }
 }
 
@@ -200,13 +196,10 @@
     }
     .modeChangeLight:hover {
         background-color: grey;
-        width: 150px;
-        height: 38.5px;
     }
     
     .modeChangeDark:hover {
         background-color: grey;
-        width: 150px;
-        height: 38.5px;
+
     }
 }
