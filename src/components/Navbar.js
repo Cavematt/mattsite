@@ -109,7 +109,7 @@ function Navbar() {
             {menu ? <div><p  onClick={changeMenu} className="navButton">MENU</p></div> : 
             <div  className="navbarAll">
             <div className="navbarTitle">
-                <h1>C:\Matt-Potts\Developer\Central-Scotland>.</h1>
+            <h1><pre>{` C:\Matt-Potts\Developer\Central-Scotland>. `}</pre></h1>
             </div>
             <div className="navbarList">
                 <ul>
