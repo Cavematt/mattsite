@@ -84,13 +84,13 @@ function Navbar() {
                         <Link onClick={() => {setColor("#000080"); setFontclr("yellow")}} className="navbarLinks" to="/Business">Web Design</Link>
                     </li>
                     <li className="navbarButton">
-                        <Link className="navbarLinks" to="/Portfolio">Portfolio</Link>
+                        <Link onClick={() => {setColor("#3a3b3c"); setFontclr("white")}} className="navbarLinks" to="/Portfolio">Portfolio</Link>
                     </li>
                     <li className="navbarButton">
-                        <Link onClick={() => setColor("#149414")} className="navbarLinks" to="/Security">Security</Link>
+                        <Link onClick={() => {setColor("#149414"); setFontclr("white")}} className="navbarLinks" to="/Security">Security</Link>
                     </li>
                     <li className="navbarButton">
-                        <Link className="navbarLinks" to="/Contact">Contact.json</Link>
+                        <Link onClick={() => {setColor("#162a6e"); setFontclr("white")}} className="navbarLinks" to="/Contact">Contact.json</Link>
                     </li>
                     <li className="navbarButton">
                         <h1 onClick={darkMode}>{nice ? <button className="modeChangeDark">NORMAL MODE</button> : <button className="modeChangeLight">DARK MODE</button>}</h1>
@@ -123,13 +123,13 @@ function Navbar() {
                         <Link onClick={() => {setColor("#000080"); setFontclr("yellow"); changeMenu()}} className="navbarLinks" to="/Business">Web Design</Link>
                     </li>
                     <li className="navbarButton">
-                        <Link className="navbarLinks" to="/Portfolio">Portfolio</Link>
+                        <Link onClick={() => {setColor("#3a3b3c"); setFontclr("white"); changeMenu()}} className="navbarLinks" to="/Portfolio">Portfolio</Link>
                     </li>
                     <li className="navbarButton">
-                        <Link className="navbarLinks" to="/Security">Security</Link>
+                        <Link onClick={() => {setColor("#149414"); setFontclr("white"); changeMenu()}} className="navbarLinks" to="/Security">Security</Link>
                     </li>
                     <li className="navbarButton">
-                        <Link className="navbarLinks" to="/Contact">Contact.json</Link>
+                        <Link onClick={() => {setColor("#162a6e"); setFontclr("white"); changeMenu()}}className="navbarLinks" to="/Contact">Contact.json</Link>
                     </li>
                     <li className="navbarButton">
                         <h1 onClick={darkMode}>{nice ? <button className="modeChangeDark">NORMAL MODE</button> : <button className="modeChangeLight">DARK MODE</button>}</h1>

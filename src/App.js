@@ -9,6 +9,7 @@ import Portfolio from './components/Portfolio'
 import Security from './components/Security'
 import Contact from './components/Contact'
 import Owasp from './components/Owasp/Owasp'
+import OwaspQuiz from './components/Owasp/OwaspQuiz'
 
 function App() {
   
@@ -38,6 +39,9 @@ function App() {
           </Route>
           <Route path="/Owasp" exact>
             <Owasp />
+          </Route>
+          <Route path="/OwaspQuiz" exact>
+            <OwaspQuiz />
           </Route>
         </Switch>
       </Router>

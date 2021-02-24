@@ -10,7 +10,7 @@ function Security() {
             <div className="everythingElse">
             <h1 className="title">Security</h1>
             <div className="mainText">
-                <p>React is an amazing framework, but like everything, it has its flaws. As a developer it is my job to ensure that the code is secure by design and is tested to minimize bugs and errors. 
+                <p>As a developer it is my job to ensure that the code is secure by design and is tested to minimize bugs and errors. 
                     I ensure that my apps are secured by SSL (as you can see by the padlock symbol in most browsers). That there is no way to access other user info by testing API's to ensure security, only using CDN's from trusted vendors and relying on companies such as AWS for authentication of users.
                 </p>
                 <p>I have an eye for spotting vunrabilities.  This year I have come accross unsecure credit card numbers from a hotel website in spain in plain text!, and also a list of transatctions and reference numbers in a major UK insurance comapny after purchasing insurance from them myself. Of course the first thing I did was inform them in both cases. The hotel swiftly resolved the issue, wheras the insurance company ignored me! c'est la vie! </p>

@@ -103,6 +103,7 @@
         font-size: 20px;
         padding: 7px;
         transition: 0.4s;
+        cursor: pointer;
     }
 
     .navButton:hover {
