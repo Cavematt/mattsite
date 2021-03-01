@@ -109,7 +109,7 @@ function Navbar() {
             {menu ? <div><p  onClick={changeMenu} className="navButton">MENU</p></div> : 
             <div  className="navbarAll">
             <div className="navbarTitle">
-            <h1><pre>{` C:\Matt-Potts\Developer\Central-Scotland>. `}</pre></h1>
+            <h1> C:\Matt-Potts\Developer\Central-Scotland>.</h1>
             </div>
             <div className="navbarList">
                 <ul>
@@ -131,7 +131,7 @@ function Navbar() {
                     <li className="navbarButton">
                         <Link onClick={() => {setColor("#162a6e"); setFontclr("white"); changeMenu()}}className="navbarLinks" to="/Contact">Contact.json</Link>
                     </li>
-                    <li className="navbarButton">
+                    <li className="navbarButtonLight">
                         <h1 onClick={darkMode}>{nice ? <button className="modeChangeDark">NORMAL MODE</button> : <button className="modeChangeLight">DARK MODE</button>}</h1>
                     </li>
                 </ul>
